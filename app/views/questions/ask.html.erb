@@ -1,0 +1,6 @@
+<p>This page is being broadcasted from app --> views --> questions --> ask.html.erb</p>
+
+<form action="answer" data-turbo="true" method="get">
+  <input type="text" name="question" value="<%= params[:question] %>">
+  <input type="submit" class="btn btn-primary" value="Ask!">
+</form>

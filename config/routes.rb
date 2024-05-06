@@ -7,4 +7,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  get "/ask", to: "questions#ask", as: :ask
+  # For the above line, "Controller" was dropped from "QuestionsController"
+  # because it will be assumed by Rails
+  get "/answer", to: "questions#answer", as: :answer
+
 end
